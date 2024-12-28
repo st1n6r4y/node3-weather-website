@@ -1,3 +1,5 @@
+
+// Deploying Node.js to Heroku
 // Wiring up the User Interface
 // Creating a Search Form
 // Browser HTTP Requests with Fetch (Browser API)
@@ -13,6 +15,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = proccess.env.PORT || 3000
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -117,10 +120,16 @@ app.get('*', (req, res) => {
 })
 
 // Serving up the page to the Browser
+app.listen(port, () => {
+    console.log('Server is up on port ' + port + '.')
+})
+
+// Hard coded - Serving up the page to the Browser
+/*
 app.listen(3000, () => {
     console.log('Server is up on port 3000.')
 })
-
+*/
 
 
 
