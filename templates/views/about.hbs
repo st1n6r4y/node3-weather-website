@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="icon" href="/img/weather.png">   {{!-- Displays an icon before the 'title' in the URL --}}
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    {{>header}}     {{!-- Partial is represented by '>' + the filename of hbs without the extension --}}
+    <div class="main-content">
+        {{header}}
+        <img class="portrait" src="../img/me.jpg">
+    </div>
+    
+    {{>footer}}
+</body>
+
+{{!-- 
+<footer>
+    {{>footer}}
+</footer> --}}
+
+</html>

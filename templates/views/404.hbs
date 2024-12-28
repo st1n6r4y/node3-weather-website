@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>404</title>
+    <link rel="icon" href="/img/weather.png">   {{!-- Displays an icon before the 'title' in the URL --}}
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    {{>header}}     {{!-- Partial is represented by '>' + the filename of hbs without the extension --}}
+    <div class="main-content">
+        {{header}}
+        <p>{{errorMessage}}</p>
+    </div>
+
+    {{>footer}}
+</body>
+
+{{!-- 
+<footer>
+    {{>footer}}
+</footer> --}}
+
+</html>
